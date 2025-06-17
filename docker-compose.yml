@@ -3,6 +3,7 @@ version: '3.8'
 services:
   runner:
     build:
+      context: .
       dockerfile: Dockerfile
       args:
           RUNNER_CONFIG: "${RUNNER_CONFIG}"
