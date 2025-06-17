@@ -3,8 +3,8 @@ version: '3.8'
 services:
   runner:
     build:
-        dockerfile: Dockerfile
+      dockerfile: Dockerfile
+      args:
+          RUNNER_CONFIG: "${RUNNER_CONFIG}"
     image: ${IMAGE_NAME}
     command: ["${ARGS}"]
-    args:
-        RUNNER_CONFIG: "${RUNNER_CONFIG}"
