@@ -7,7 +7,7 @@ WORKDIR /builder
 COPY fs_lib/build/* .
 RUN chmod +x base.sh
 
-RUN ./base.sh "$RUNNER_CONFIG"
+RUN ./base.sh $RUNNER_CONFIG
 
 USER appuser
 
