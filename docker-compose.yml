@@ -8,4 +8,4 @@ services:
       args:
           RUNNER_CONFIG: "${RUNNER_CONFIG}"
     image: ${IMAGE_NAME}
-    command: ["${ARGS}"]
+    command: ${ARGS}
