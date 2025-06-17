@@ -13,4 +13,4 @@ USER appuser
 
 WORKDIR /runner
 COPY fs_lib fs_lib
-ENTRYPOINT ["python3", "fs_lib/container/entrypoint.py"]
+ENTRYPOINT ["/runner/venv/bin/python3", "fs_lib/container/entrypoint.py"]
